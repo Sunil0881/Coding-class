@@ -10,11 +10,11 @@
       <h1 class="text-white text-4xl pl-60">Developer <span class="text-blue-800 font-bold">X.</span></h1>
       <div class="pl-36 pt-3">
         <ul class="text-white text-lg flex gap-10">
-          <li class="text-white hover:text-blue-800 cursor-pointer">Home</li>
-          <li class="text-white hover:text-blue-800 cursor-pointer">About</li>
-          <li class="text-white hover:text-blue-800 cursor-pointer">Services</li>
-          <li class="text-white hover:text-blue-800 cursor-pointer">Portfolio</li>
-          <li class="text-white hover:text-blue-800 cursor-pointer">Contact</li>
+          <a href="#Home"><li class="text-white hover:text-blue-800 cursor-pointer scroll-smooth">Home</li></a>
+          <a href="#About"><li class="text-white hover:text-blue-800 cursor-pointer scroll-smooth">About</li></a>
+          <!-- <a href="#Services"><li class="text-white hover:text-blue-800 cursor-pointer">Services</li></a> -->
+          <a href="#Portfolio"><li class="text-white hover:text-blue-800 cursor-pointer">Portfolio</li></a>
+          <a href="#Contact"><li class="text-white hover:text-blue-800 cursor-pointer">Contact</li></a>
         </ul>
       </div>
       <div class="flex pl-60 pt-3">
@@ -23,7 +23,7 @@
     </div>
   </nav>
   <main>
-    <div class="flex">
+    <div id="Home" class="flex">
       <div class="pl-60 pt-60">
         <h1 class="text-white text-2xl">Hi,There!</h1> <br>
       <h2 class="text-white text-6xl">I'm <span class="text-blue-800 font-bold">Tahmid Hamim</span></h2>
@@ -52,7 +52,7 @@
         <img class="h-full w-96" src="./Human.png" alt="Human">
       </div>
     </div>
-    <div class="flex pb-40">
+    <div id="About" class="flex pb-40 scroll-smooth">
       <div class="pl-60 pt-20">
         <img src="./Human.png" class=" pt-28 h-full w-96" alt="Human">
       </div>
@@ -71,7 +71,7 @@
       </div>
   </div>
 </div>
-<div id="My Portfolio">
+<div id="Portfolio">
   <div class="flex justify-center pb-20">
     <h1 class="text-white text-4xl font-bold">My <span class="text-blue-800">Portfolio</span></h1>
   </div>
@@ -96,6 +96,27 @@
       </div>
       <h1 class="pl-10 text-gray-500 text-xl mt-8">Web Design</h1>
       <h2 class="pl-10 pt-5 text-white text-2xl">Website Development For <br> Dark X</h2>
+    </div>
+  </div>
+</div>
+<div id="Contact" class="pb-20">
+  <div class="flex justify-center">
+    <h1 class="text-5xl text-white font-bold">
+      Contact <span class="text-blue-800">Me</span>
+    </h1>
+  </div>
+  <div> 
+    <div class="flex justify-center pt-28 pb-3">
+      <input type="text" placeholder="Your Name" class="bg-gray-800 w-96 p-2 text-xl text-white border-4 border-blue-800 rounded-lg ">
+    </div>
+    <div class="flex justify-center pb-3">
+      <input type="text" placeholder="Email Address..." class="bg-gray-800 w-96 p-2 text-xl text-white border-4 border-blue-800 rounded-lg ">
+    </div>
+    <div class="flex justify-center pb-3">
+      <textarea type="text" placeholder="Write Message Here..." class="bg-gray-800 h-60 w-96 p-2 text-xl text-white border-4 border-blue-800 rounded-lg "></textarea>
+    </div>
+    <div class="flex justify-center mr-16 mt-5">
+      <button class="bg-blue-800 px-3 py-1 rounded-lg text-2xl hover:text-white">Send Message</button>
     </div>
   </div>
 </div>
